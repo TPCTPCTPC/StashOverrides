@@ -1,0 +1,23 @@
+name: YouTube Playbacks-Ad Blocking
+desc: See above.
+
+http:
+  mitm:
+    - "*.googlevideo.com"
+    - "*.youtube.com"
+    - "youtubei.googleapis.com"
+  rewrite:
+    - ^https?:\/\/.+?\.googlevideo\.com\/.+&oda - reject-img
+    - ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\/ad_break\?key - reject-img
+    - ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/att\/get\?key - reject-img
+    - ^https?:\/\/.+\.googlevideo\.com\/ptracking - reject-dict
+    - ^https?:\/\/.+\.googlevideo\.com\/videogoodput - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/.+adformat - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/.+get_ads - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/api\/stats\/qoe - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/get_midroll - reject-dict
+    - ^https?:\/\/.+\.youtube\.com\/pagead - reject-dict
+    - ^https?:\/\/.+\.googleapis\.com\/youtubei\/v1\/log_event - reject-dict
+    - (https?:\/\/[\w-]+.googlevideo.com\/.+?)(&ctier=L|\/ctier\/L)((&|\/).+?)(,ctier|%2Cctier)((,|%2C).+) $1$3$6 302
+    
