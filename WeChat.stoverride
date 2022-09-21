@@ -3,9 +3,9 @@ desc: WeChat saves and uploads user behaviours while reading articles on the app
 
 http:
   mitm:
-    - "mp.weixin.qq.com"
+    - "*.weixin.qq.com"
   rewrite:
     - ^https?:\/\/.+\.weixin\.qq\.com\/.+report - reject-dict
     - ^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+monitor\? - reject-dict
-    - ^https:\/\/mp\.weixin\.qq\.com\/mp\/relatedarticle - reject-dict
-    - ^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+ad\? - reject-dict
+    - ^https:\/\/mp\.weixin\.qq\.com\/mp\/relatedarticle - reject-img
+    - ^https?:\/\/mp\.weixin\.qq\.com\/mp\/.+ad\? - reject-img
