@@ -1,5 +1,5 @@
 name: YouTube Playbacks-Ad Blocking (Stash 2.0)
-desc: Blocking YouTube playback ads and event logging.
+desc: Blocking YouTube playback ads & event logs.
 
 http:
   mitm:
