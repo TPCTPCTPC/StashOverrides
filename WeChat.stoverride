@@ -1,5 +1,5 @@
 name: WeChat Article Cleaner (Stash 2.0)
-desc: WeChat saves and uploads user behaviours while reading articles on the app, here's some rewrites to stop them. It also blocks article-ads and related article suggestions.
+desc: WeChat sniffs and uploads users' behaviours while they are reading articles on the app, here's some rewrites to solve. It also blocks article-ads and related article suggestions.
 
 http:
   mitm:
