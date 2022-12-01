@@ -1,6 +1,7 @@
 name: Do-Not-Track My Xiaohongshu
-desc: Blocking personal data collecting, metrics and reports from Xiaohongshu. Does not block ads bc they looked fine (to me) for now;) #小红书 #隐私 #追踪
+desc: Blocking personal data collecting, metrics and reports from Xiaohongshu. #小红书 #隐私 #追踪
 
+# Does not block ads bc they looked fine (to me) for now;)
 http:
   mitm:
     - "*.xiaohongshu.com"
