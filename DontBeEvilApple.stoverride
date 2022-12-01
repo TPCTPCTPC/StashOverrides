@@ -1,0 +1,11 @@
+name: Don't Be Evil, Apple Inc.
+desc: "Blocks Apple native broadband tracker that track your activity." - Hagezi@Github
+
+proxy-providers:
+  apple-native-tracker:
+    behavior: domain-text
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/native.apple.txt
+    interval: 86400
+    
+rules:
+  - RULE-SET,apple-native-tracker,REJECT
