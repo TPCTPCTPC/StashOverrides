@@ -1,5 +1,5 @@
-name: YouTube Playbacks-Ad Blocking (Stash 2.0)
-desc: Blocking YouTube playback ads & event logs.
+name: YouTube Playbacks-Ad Blocking (Alternative)
+desc: I really, really, really recommend @Maasea's "YoutubeAds.sgmodule". Let's hope he'd made a Stash version someday.
 
 http:
   mitm:
