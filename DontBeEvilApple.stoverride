@@ -1,5 +1,5 @@
 name: Don't Be Evil, Apple Inc.
-desc: "Blocks Apple native broadband tracker that track your activity." - Hagezi@Github
+desc: "Blocks Apple native broadband tracker that track your activity." - Hagezi@Github #Apple #苹果 #隐私 #追踪
 
 proxy-providers:
   apple-native-tracker:
