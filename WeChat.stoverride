@@ -1,5 +1,5 @@
 name: WeChat Article Cleaner
-desc: WeChat sniffs and uploads users' behaviours while they are reading articles on the app, here're some rewrites to solve. It also blocks article-ads and related article suggestions.
+desc: WeChat sniffs and uploads users' behaviours while they are reading articles on the app, here're some rewrites to solve. It also blocks article-ads and related article suggestions. #微信 #隐私 #追踪 #广告
 
 http:
   mitm:
